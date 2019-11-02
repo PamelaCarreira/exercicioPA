@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language=javascript>
+        x= parseInt(prompt("Informe um valor"));
+        y= 1;
+        z= 0;
+        while (y<=x)
+        {
+            resto= x%y;
+            if (resto==0)
+                    {
+                        z=z+y;
+                    }
+            y++
+        }
+        z= z-x;
+        if (z==x)
+        {
+            document.write(x + " é perfeito");
+        }
+
+        else
+        {
+            document.write(x + " não é perfeito");
+        }
+        </script>
+    </head>
+    <body></body>
+</html>

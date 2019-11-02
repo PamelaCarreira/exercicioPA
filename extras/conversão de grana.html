@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script language=javascript>
+           document.write("Conersão de grana" + "<br/>" + "Digite 1 - conversão de reais para dolares");
+           document.write("<br/>" + "Digite 2 - conversão de dolares para reais");
+           document.write("<br/>" + "Digite 3 - conversão de reais para libras");
+           document.write("<br/>" + "Digite 4 - conversão de libras para reais");
+           document.write("<br/>" + "Digite 5 - conversão dolares para libras");
+           document.write("<br/>" + "Digite 6 - conversão libras para dolares");
+           
+           conv= prompt("Digite o número da conversão escolhida");
+
+           switch (conv)
+           {
+               case 1: 
+               {
+                alert ("Conversão de reais para dolares");
+                valor= parseFloat(prompt("Informe o valor em reais a serem convertidos"));
+                conver= valor*0.25.toFixed(2);
+                document.write(" O valor em dolares será " + conver + " US$ </br>" + "</br>");
+               }
+
+               case 2: 
+               {
+                alert ("Conversão de dolares para reais");
+                valor= parseFloat(prompt("Informe o valor em reais a serem convertidos"));
+                conver= valor*4.21.toFixed(2);
+                document.write(" O valor em dolares será " + conver + "R$ </br>" + "</br>");
+               }
+
+               case 3: 
+               {
+                alert ("Conversão de reais para libras");
+                valor= parseFloat(prompt("Informe o valor em reais a serem convertidos"));
+                conver= valor*0.19.toFixed(2);
+                document.write(" O valor em libras será " + conver + " £ </br>" + "</br>");
+               }
+
+               case 4: 
+               {
+                alert ("Conversão de libras para reais");
+                valor= parseFloat(prompt("Informe o valor em reais a serem convertidos"));
+                conver= valor*5.14.toFixed(2);
+                document.write(" O valor em reais será " + conver + " R$ </br>" + "</br>");
+               }
+
+               case 5: 
+               {
+                alert ("Conversão de dolar para libra");
+                valor= parseFloat(prompt("Informe o valor em reais a serem convertidos"));
+                conver= valor*0.77.toFixed(2);
+                document.write(" O valor em libra será " + conver + " £ </br>" + "</br>");
+               }
+
+               case 6: 
+               {
+                alert ("Conversão de libra para dolar");
+                valor= parseFloat(prompt("Informe o valor em reais a serem convertidos"));
+                conver= valor*1.29.toFixed(2);
+                document.write(" O valor em dolar será " + conver + " US$ </br>" + "</br>");
+               }
+           }
+        </script>
+    </head>
+    <body></body>
+</html>
